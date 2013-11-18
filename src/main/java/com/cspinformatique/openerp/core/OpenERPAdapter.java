@@ -1,12 +1,7 @@
-package com.cspinformatique.openerp;
+package com.cspinformatique.openerp.core;
 
 import org.apache.xmlrpc.XmlRpcException;
 
-import com.cspinformatique.openerp.core.FilterCollection;
-import com.cspinformatique.openerp.core.ObjectAdapter;
-import com.cspinformatique.openerp.core.Row;
-import com.cspinformatique.openerp.core.RowCollection;
-import com.cspinformatique.openerp.core.Session;
 
 import java.util.Map;
 import java.util.Map.Entry;

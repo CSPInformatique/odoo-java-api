@@ -1,9 +1,4 @@
-package com.cspinformatique.openerp;
-
-import java.util.Map;
-
-import com.cspinformatique.openerp.core.FilterCollection;
-import com.cspinformatique.openerp.core.RowCollection;
+package com.cspinformatique.openerp.core;
 
 public class OpenERPUtil {
 	private OpenERPAdapter openERPAdapter;
@@ -12,8 +7,8 @@ public class OpenERPUtil {
 		this.openERPAdapter = openERPAdapter;
 	}
 	
-	public void createObject(Map<String, Object> parameters, String entityKey){
-		openERPAdapter.createObject(parameters, entityKey);
+	public Integer createObject(EntityParams entityParams, String entityKey){
+		return openERPAdapter.createObject(entityParams.getParams(), entityKey);
 	}
 	
 	public RowCollection searchObject(FilterCollection filters, String[] fields, String objectType){

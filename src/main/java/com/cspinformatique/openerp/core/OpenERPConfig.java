@@ -1,4 +1,4 @@
-package com.cspinformatique.openerp;
+package com.cspinformatique.openerp.core;
 
 //import javax.servlet.ServletContext;
 
